@@ -1,10 +1,13 @@
-# Proyecto de Automatización de Servicios con Postman, Maven y Karate  🖥️🖥️🖥️
+# Service Automation Project with Postman, Maven and Karate   🖥️🖥️🖥️
 
-## Descripción
+## Description
 
-Este proyecto tiene como objetivo automatizar pruebas de servicios utilizando Postman, dependencias de  Maven y el framework Karate. Karate permite realizar pruebas de API de manera sencilla, y con la combinación de Postman y Maven, podemos asegurar una alta calidad en las pruebas y consumo de los  servicios de manera eficiente.
+This project aims to automate service testing using Postman, Maven dependencies and the Karate framework. Karate allows API testing in a simple way, and with the combination of Postman and Maven, we can ensure high quality testing and consumption of services in an efficient way. The Screenplay framework using gherkin language will also be used.
 
-## Estructura del Proyecto 🦉🦉
+In this project the most common examples of testing with the Karate framework are applied.
+To apply the test cases we will use the test website https://reqres.in/, which provides several endpoints on which you can make GET, PUT, POST and DELETE requests.
+
+## Project Structure 🦉🦉
 
 ├── pom.xml
 ├── README.md
@@ -22,34 +25,42 @@ Este proyecto tiene como objetivo automatizar pruebas de servicios utilizando Po
 │      └── karate-config.js
        └── karate-properties.json
 
-## Prerrequisitos
+## Prerequisites
 
-Antes de comenzar, asegúrate de tener instalados los siguientes programas:
+Before you start, make sure you have the following programs installed:
 
 - [Java JDK 21](https://www.oracle.com/java/technologies/javase-downloads.html)
 - [Apache Maven](https://maven.apache.org/install.html)
 - [Postman](https://www.postman.com/downloads/)
 
-## Instalación
+## Installation
 
-1️⃣ Clona el repositorio en tu máquina local:💾
+1️⃣ Clone the repository on your local machine:💾
 
     ```sh
     git clone https://github.com/amileja/backend_karate.git
     ```
 
-2️⃣ Configura el proyecto en tu IDE de preferencia (por ejemplo, el utilizado para la creación de éste proyecto fué IntelliJ IDEA, también puedes usar Eclipse), selecciona **File > Open...**. Navega hasta el directorio del proyecto y selecciónalo.
+2️⃣ Configure the project in your IDE of choice (e.g., the one used for the creation of this project was  IntelliJ IDEA,you can also use Eclipse), select  **File > Open...**. Navigate to the project directory and select it.
 
-3️⃣ IntelliJ IDEA detectará automáticamente que se trata de un proyecto Maven y comenzará a descargar las dependencias necesarias.
+3️⃣ IntelliJ IDEA will automatically detect that it is a Maven project and start downloading the necessary dependencies..
 
 
-## Configuración de Karate
+## Evidences report 
+The following is the evidence of the successful generation of the report in the execution of the automation. 
+![alt text](image-1.png)
 
-Karate es un framework de pruebas de API que combina una sintaxis sencilla con potentes capacidades de prueba. La configuración básica se realiza en el archivo `pom.xml`.
 
-### Dependencias ⚠️
+## Karate Configuration
 
-Asegúrate de que tu `pom.xml` incluya las siguientes dependencias:
+Karate is a framework of the API testing software that combines a simple syntax with powerful testing capabilities. The basic configuration is done in the `pom.xml`.
+
+
+
+
+### Dependencies ⚠️
+
+Make sure your `pom.xml` include the following units:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -152,9 +163,8 @@ Asegúrate de que tu `pom.xml` incluya las siguientes dependencias:
 </project>
 
 
-LICENCIA 🥰
-Este README proporciona una guía clara sobre cómo configurar y ejecutar pruebas automatizadas utilizando Postman, Maven y Karate, con desarrollo en el IDE IntelliJ IDEA. Ajusta el contenido según sea necesario para que se adapte a los detalles específicos de tu proyecto.
 
+#### Evidences report 
 
 
 
